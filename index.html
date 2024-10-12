@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-none">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="logout-btn nav-link active border border-2 text-secondary"
+                aria-current="page"
+                href="#"
+                >logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5 card-main text-center login-form d-block">
+      <div class="card text-center card-custom p-3">
+        <div class="card-body">
+          <h5 class="card-title">Smart Login System</h5>
+          <input
+            type="email"
+            class="form-control text-white my-4"
+            id="emailSignInInput"
+            placeholder="Enter your email"
+          />
+          <input
+            type="password"
+            class="form-control text-white my-3"
+            id="passwordSignInInput"
+            placeholder="Enter your password"
+          />
+          <p class="text-danger fs-6 error-msg d-none">
+            Incorrect name or password
+          </p>
+          <p class="text-danger fs-6 empty-msg d-none">
+            All field are required
+          </p>
+          <a href="#" class="btn w-100 login-btn">Login</a>
+        </div>
+        <div class="card-footer text-white">
+          Don’t have an account?
+          <a class="text-decoration-none text-white sign-up-btn">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 card-main d-none sign-up-card">
+      <div class="card text-center card-custom p-3">
+        <div class="card-body">
+          <h5 class="card-title">Smart Login System</h5>
+          <input
+            type="text"
+            class="form-control text-white my-4"
+            id="nameSignUpInput"
+            placeholder="Enter your name"
+          />
+          <p class="text-danger d-none fs-6">
+            Name must start with Capital letter
+          </p>
+          <input
+            type="email"
+            class="form-control text-white my-4"
+            id="emailSignUpInput"
+            placeholder="Enter your email"
+          />
+          <p class="text-danger d-none fs-6">Please enter a valid email</p>
+          <input
+            type="password"
+            class="form-control text-white my-4"
+            id="passwordSignUpInput"
+            placeholder="Enter your password"
+          />
+          <p class="text-danger d-none fs-6">
+            password must be 5 letters or more( characters or numbers)
+          </p>
+
+          <a href="#" class="btn w-100 login-btn create-btn">Sign Up</a>
+        </div>
+        <div class="card-footer text-white">
+          Already have acount
+          <a class="text-decoration-none text-white sign-in-btn"> Sign In</a>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 card-main text-center d-none welcome-block">
+      <div class="card text-center card-custom p-3">
+        <div class="card-body welcome-text">
+          <h5 class="card-title"></h5>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

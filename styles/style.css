@@ -1,0 +1,59 @@
+body {
+  background-color: #24353f;
+}
+.card-main {
+  width: 60%;
+}
+.card-custom {
+  background-color: #24353f;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card input {
+  background-color: transparent;
+}
+.card-title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  color: rgb(23, 162, 184);
+}
+div.card-footer a:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+.form-control:focus {
+  background-color: white;
+  color: rgb(0, 0, 0) !important;
+}
+
+#emailSignInInput::placeholder,
+#passwordSignInInput::placeholder,
+#passwordSignUpInput::placeholder,
+#nameSignUpInput::placeholder,
+#emailSignUpInput::placeholder {
+  color: #dee2e6;
+}
+.login-btn {
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
+}
+.login-btn:hover {
+  background-color: #17a2b8;
+}
+.navbar {
+  background-color: #24353f !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.navbar > .container-fluid {
+  justify-content: space-around;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.nav-link {
+  border-color: #ffc107 !important;
+  border-radius: 8px;
+}
+.nav-link:hover {
+  background-color: #ffc107 !important;
+}
